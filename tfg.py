@@ -22,16 +22,12 @@ data = df
 
 countries = data['Country Name']
 data = data.drop('Country Name', axis=1)
-
 malaria = data['Malaria Cases']
 data = data.drop('Malaria Cases', axis=1)
-
 tuberculosis = data['TB Cases']
 data = data.drop('TB Cases', axis=1)
-
 hiv = data['HIV Cases']
 data = data.drop('HIV Cases', axis=1)
-
 sida = data['Infant Mortality']
 data = data.drop('Infant Mortality', axis=1)
 data = data.drop('Antiretroviral Coverage People with HIV', axis=1)
