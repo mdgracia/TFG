@@ -28,8 +28,8 @@ tuberculosis = data['TB Cases']
 data = data.drop('TB Cases', axis=1)
 hiv = data['HIV Cases']
 data = data.drop('HIV Cases', axis=1)
-sida = data['Infant Mortality']
-data = data.drop('Infant Mortality', axis=1)
+sida = data['Sida']
+data = data.drop('Sida', axis=1)
 data = data.drop('Antiretroviral Coverage People with HIV', axis=1)
 data = data.drop('Pregnant Women Living with HIV who Received Antiretrovirals', axis=1)
 mala = data['Prevalence of Underweight']
