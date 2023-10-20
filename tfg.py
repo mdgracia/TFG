@@ -243,7 +243,7 @@ df_tsne['Casos_VIH'] = hiv
 fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111, projection='3d')
 
-sc = ax.scatter(df_tsne['Componente 1'], df_tsne['Componente 2'], df_tsne['Componente 3'], c=df_tsne['Casos_VIH'], cmap='viridis')
+sc = ax.scatter(df_tsne['Componente 1'], df_tsne['Componente 2'], df_tsne['Componente 3'], c=sida, cmap='viridis')
 
 ax.set_xlabel('Componente 1')
 ax.set_ylabel('Componente 2')
@@ -279,7 +279,7 @@ x = resultats_3d[:, 0]
 y = resultats_3d[:, 1]
 z = resultats_3d[:, 2]
 
-scatter = ax.scatter(x, y, z, c=malaria, cmap='viridis', marker='o', alpha=0.6, edgecolor='w', linewidth=0.5, s=50)
+scatter = ax.scatter(x, y, z, c=mala, cmap='viridis', marker='o', alpha=0.6, edgecolor='w', linewidth=0.5, s=50)
 
 plt.title('Visualización t-SNE 3D coloreada por el número de casos de Malaria')
 
